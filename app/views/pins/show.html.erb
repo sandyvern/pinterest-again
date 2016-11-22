@@ -2,12 +2,12 @@
 
 <h2><%= @pin.title %></h2>
 <p><%= @pin.description %></p>
-<p><%= @pin.user.username %></p>
+<p>Posted by <strong><%= @pin.user.username %></strong></p>
 
-<%= link_to 'Back', root_path %>
+<%= link_to 'Back', root_path, class: 'btn btn-default' %>
 
 <% if current_user %>
-  | <%= link_to 'Edit', edit_pin_path %> |
-  <%= link_to 'Delete', pin_path, method: :delete, data: { confirm: 'Are you sure?' } %>
+  <%= link_to 'Edit', edit_pin_path, class: 'btn btn-default' %>
+  <%= link_to 'Delete', pin_path, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-default' %>
 <% end %>
 

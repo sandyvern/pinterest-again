@@ -1,9 +1,9 @@
 <% @pins.each do |pin| %>
 
-<h2><%= link_to pin.title, pin %></h2>
+<h4><%= link_to pin.title, pin %></h4>
 <p><%= pin.description %></p>
 
 
 <% end %>
 
-<%= link_to 'New Pin', new_pin_path %>
+<%= link_to 'New Pin', new_pin_path, class: 'btn btn-default' %>
