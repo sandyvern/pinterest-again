@@ -16,6 +16,8 @@ gem 'simple_form', '~> 3.3', '>= 3.3.1'
 gem 'paperclip', '~> 5.1'
 gem 'coffee-script-source', '~> 1.8.0'
 gem 'devise', '~> 4.2'
+gem 'masonry-rails', '~> 0.2.4'
+gem 'jquery-turbolinks', '~> 2.1'
 
 group :development, :test do
   gem 'byebug'

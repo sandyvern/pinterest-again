@@ -11,7 +11,15 @@
 // about supported directives.
 //
 //= require jquery
-//= require bootstrap-sprockets
+//= require jquery.turbolinks
 //= require jquery_ujs
-//= require turbolinks
+//= require bootstrap-sprockets
+//= require masonry/jquery.masonry
 //= require_tree .
+//= require turbolinks
+
+
+$('a[data-popup]').live("click", function(e) {
+    window.open( $(this).attr("href"), "Popup", "height=600, width=600" );
+    e.preventDefault();
+});
