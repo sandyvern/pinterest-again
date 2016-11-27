@@ -1,5 +1,7 @@
 <h1>Pin</h1>
 
+<%= image_tag @pin.image.url(:medium) %>
+
 <h2><%= @pin.title %></h2>
 <p><%= @pin.description %></p>
 <p>Posted by <strong><%= @pin.user.username %></strong></p>

@@ -41,4 +41,7 @@ Rails.application.configure do
   
   # Added per Devise installation instructions
   config.action_mailer.default_url_options = { host: 'https://pinterest-again-sandyvern.c9users.io/' }
+
+  # Added per Paperclip documentation
+  Paperclip.options[:command_path] = "/usr/local/bin/"
 end
