@@ -1,9 +1,16 @@
-<% @pins.each do |pin| %>
+<div id="pins">  
+ 
+  <p><% @pins.each do |pin| %></p>
+ 
+    <div class="box"> 
+               
+      <%= link_to image_tag pin.image.url(:medium)%>                              
+      <%= link_to pin.title, pin %>           
 
-<h4><%= link_to pin.title, pin %></h4>
-<p><%= pin.description %></p>
-
-
-<% end %>
+    </div>
+  <% end %>
+  
+</div>
 
 <%= link_to 'New Pin', new_pin_path, class: 'btn btn-default' %>
+

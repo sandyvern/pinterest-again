@@ -1,0 +1,23 @@
+// Place all the styles related to the Pins controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#pins {
+    margin: 0 auto;
+}
+
+.box { 
+    margin: 15px; 
+    width: 214px; 
+    background-color: #eee; 
+    border-radius: 10px;
+     a{ 
+        color: #656565; 
+        font-size: 12px; 
+        font-weight: 500; 
+        }
+}
+.box img{ 
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    }

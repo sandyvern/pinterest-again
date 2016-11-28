@@ -11,10 +11,11 @@
  * file per style scope.
  *
  *= require_tree .
- *= require_self
- *= require 'masonry/right-to-left'
- */
+*= require_self
+*= require 'masonry/right-to-left'
+*/
  
-
+ 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "pins.css.scss";
