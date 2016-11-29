@@ -2,7 +2,12 @@
   
   <h1><%= @pin.title %></h1><br>
     <p class="description"><%= @pin.description %></p><br>
-    <p class="user">Posted by <strong><%= @pin.user.username %></strong></p>
+    <p class="user">Posted by <strong><%= @pin.user.username %></strong></p><br>
+    
+    <p><%= link_to like_pin_path(@pin), method: :put, class: "btn-default" do %></p>
+    <span class="glyphicon glyphicon-heart" aria-idden="true"></span>
+    <span><%= @pin.get_upvotes.size %></span>
+    <% end %>
 
 <%= link_to 'Back', root_path, class: 'btn btn-default' %>
 

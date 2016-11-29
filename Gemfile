@@ -18,6 +18,7 @@ gem 'coffee-script-source', '~> 1.8.0'
 gem 'devise', '~> 4.2'
 gem 'masonry-rails', '~> 0.2.4'
 gem 'jquery-turbolinks', '~> 2.1'
+gem 'acts_as_votable', '~> 0.10.0'
 
 group :development, :test do
   gem 'byebug'
