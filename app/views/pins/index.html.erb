@@ -6,7 +6,10 @@
                
       <%= link_to image_tag pin.image.url(:medium)%>                              
       <p class="title"><%= link_to pin.title, pin %></p>          
-      <p class="user">By <%= pin.user.username %></p>
+      <p class="user">By <strong class="username"><%= pin.user.username %></strong></p>
+    
+    <!-- Button trigger modal -->
+    
     </div>
   <% end %>
   

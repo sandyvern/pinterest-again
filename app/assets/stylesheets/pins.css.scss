@@ -7,15 +7,17 @@
 }
 
 .box { 
-    margin: 5px; 
+    margin: 9px; 
     width: 230px; 
     height: auto;
-    background-color: #eee; 
+    background-color: #f2f2f2; 
     border-radius: 10px;
+    box-shadow: 30px;
+    transition: all .6s ease-in-out;
     
     p.title { 
         color: #656565; 
-        font-size: 12px; 
+        font-size: 14px; 
         font-weight: 500; 
         padding-left: 10px;
         padding-top: 5px;
@@ -23,8 +25,16 @@
         
     p.user {
         padding-left: 10px;
+        column-rule: #lalala;
+        font-size: 11px;
     }
                 
+}
+
+.box:hover {
+    -webkit-transform: scale(1.08);
+    transform: scale(1.08);
+    background-color: #99ddff;
 }
 
 .box img { 
@@ -41,4 +51,10 @@
 .container p {
     color: #bfbfbf;
 }
+
+.username {
+    color: #1a1a1a;
+}
+
+
     
