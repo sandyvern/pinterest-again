@@ -5,8 +5,8 @@
     <div class="box"> 
                
       <%= link_to image_tag pin.image.url(:medium)%>                              
-      <%= link_to pin.title, pin %>           
-
+      <p class="title"><%= link_to pin.title, pin %></p>          
+      <p class="user">By <%= pin.user.username %></p>
     </div>
   <% end %>
   

@@ -7,17 +7,38 @@
 }
 
 .box { 
-    margin: 15px; 
+    margin: 5px; 
     width: 214px; 
+    height: auto;
     background-color: #eee; 
     border-radius: 10px;
-     a{ 
+    
+    p.title { 
         color: #656565; 
         font-size: 12px; 
         font-weight: 500; 
+        padding-left: 10px;
+        padding-top: 5px;
         }
+        
+    p.user {
+        padding-left: 10px;
+    }
+                
 }
-.box img{ 
+
+.box img { 
     width: 100%;
+    height: auto;
     border-radius: 10px 10px 0px 0px;
     }
+    
+.container h1 {
+    color: #bfbfbf;
+    font-weight: 700;
+}
+
+.container p {
+    color: #bfbfbf;
+}
+    
